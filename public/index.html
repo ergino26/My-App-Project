@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#165b2a"><title>Barangay Farmer System</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div id="toastRoot" class="toast-root"></div>
+  <div id="authView" class="auth-shell">
+    <div class="auth-brand"><div class="brand-mark">🌾</div><div><b>BARANGAY FARMER</b><span>Registration & Assistance System</span></div></div>
+    <div class="auth-card">
+      <div class="auth-side"><div class="eyebrow">LOCAL • OFFLINE • ORGANIZED</div><h1>Farmer information made simpler.</h1><p>Register farmers, manage agricultural assistance, track distributions, and publish barangay updates from one local system.</p><div class="feature-mini"><span>✓</span> Farmer registration & verification</div><div class="feature-mini"><span>✓</span> Assistance program monitoring</div><div class="feature-mini"><span>✓</span> Announcements & records</div></div>
+      <div class="auth-form-area">
+        <div class="tabs"><button class="tab active" data-auth="login">Log in</button><button class="tab" data-auth="register">Farmer registration</button></div>
+        <form id="loginForm" class="form-stack"><h2>Welcome back</h2><p class="muted">Admin: <b>admin</b> / <b>admin123</b></p><label>Username or phone<input name="username" required autocomplete="username"></label><label>Password<input name="password" type="password" required autocomplete="current-password"></label><button class="btn primary wide">Log in</button></form>
+        <form id="registerForm" class="form-stack hidden"><h2>Create farmer account</h2><p class="muted">Your registration will be marked Pending until verified by barangay personnel.</p><div class="grid-2"><label>First name *<input name="firstName" required></label><label>Middle name<input name="middleName"></label><label>Last name *<input name="lastName" required></label><label>Suffix<input name="suffix"></label><label>Birth date *<input name="birthDate" type="date" required></label><label>Sex *<select name="sex" required><option value="">Select</option><option>Male</option><option>Female</option><option>Prefer not to say</option></select></label><label>Civil status<select name="civilStatus"><option>Single</option><option>Married</option><option>Widowed</option><option>Separated</option></select></label><label>Phone *<input name="phone" required placeholder="09xxxxxxxxx"></label><label class="span-2">Address *<input name="address" required></label><label>Farm location *<input name="farmLocation" required></label><label>Farm size (hectares) *<input name="farmSize" type="number" min="0" step="0.01" required></label><label>Farm type *<select name="farmType" required><option value="">Select</option><option>Rice</option><option>Corn</option><option>Vegetable</option><option>Fruit</option><option>Livestock</option><option>Poultry</option><option>Mixed</option><option>Other</option></select></label><label>Years farming<input name="yearsFarming" type="number" min="0"></label><label>Crop / farm details<input name="cropDetails"></label><label>ID type<input name="idType" placeholder="Farmer ID / Barangay ID"></label><label>ID number<input name="idNumber"></label><label class="span-2">Password *<input name="password" type="password" minlength="6" required></label></div><button class="btn primary wide">Submit registration</button></form>
+      </div>
+    </div>
+  </div>
+
+  <div id="appView" class="app-shell hidden">
+    <aside class="sidebar"><div class="brand"><div class="brand-icon">🌾</div><div><b>FarmerHub</b><small>Barangay System</small></div></div><nav id="nav"></nav><div class="sidebar-bottom"><div class="offline-pill">● Offline / Local</div><button id="logoutBtn" class="nav-btn danger">↪ Log out</button></div></aside>
+    <main class="main"><header class="topbar"><button id="menuBtn" class="icon-btn">☰</button><div><div class="eyebrow" id="pageEyebrow">BARANGAY MANAGEMENT</div><h1 id="pageTitle">Dashboard</h1></div><div class="top-actions"><span class="date-chip" id="today"></span><button id="profileBtn" class="avatar-btn">R</button></div></header><section id="content" class="content"></section></main>
+  </div>
+  <div id="modalRoot"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

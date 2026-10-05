@@ -1,0 +1,139 @@
+{
+  "users": [
+    {
+      "id": "U-ADMIN-001",
+      "role": "admin",
+      "username": "admin",
+      "passwordHash": "501945663849346aec69d38defd00e53:fd1d9b6a6c4e89f278c28363bac86259c4a9ab1ccee9008ec191b445ebeb84d8f096f51348bc89fd1326839e83a2761f23082f4f2460c5f3745c80422d3023d6",
+      "name": "Barangay Administrator",
+      "phone": "09170000000",
+      "createdAt": "2026-09-01T08:00:00.000Z"
+    }
+  ],
+  "farmers": [
+    {
+      "id": "F-2026-0001",
+      "userId": null,
+      "firstName": "Juan",
+      "middleName": "Dela Cruz",
+      "lastName": "Santos",
+      "suffix": "",
+      "birthDate": "1985-05-12",
+      "sex": "Male",
+      "civilStatus": "Married",
+      "phone": "09171234567",
+      "address": "Purok 2, Barangay San Isidro",
+      "farmLocation": "Purok 2, San Isidro",
+      "farmSize": 2.5,
+      "farmType": "Rice",
+      "cropDetails": "Rice and corn",
+      "yearsFarming": 15,
+      "idType": "Farmer ID",
+      "idNumber": "FID-2026-0001",
+      "status": "Verified",
+      "notes": "Active rice farmer",
+      "createdAt": "2026-09-05T02:00:00.000Z",
+      "updatedAt": "2026-09-05T02:00:00.000Z"
+    },
+    {
+      "id": "F-2026-0002",
+      "userId": null,
+      "firstName": "Maria",
+      "middleName": "Lopez",
+      "lastName": "Garcia",
+      "suffix": "",
+      "birthDate": "1990-11-20",
+      "sex": "Female",
+      "civilStatus": "Single",
+      "phone": "09179876543",
+      "address": "Purok 5, Barangay San Isidro",
+      "farmLocation": "Purok 5, San Isidro",
+      "farmSize": 1.25,
+      "farmType": "Vegetable",
+      "cropDetails": "Eggplant, tomato, pechay",
+      "yearsFarming": 8,
+      "idType": "Barangay ID",
+      "idNumber": "BID-2026-0034",
+      "status": "Pending",
+      "notes": "Awaiting document verification",
+      "createdAt": "2026-09-09T04:30:00.000Z",
+      "updatedAt": "2026-09-09T04:30:00.000Z"
+    }
+  ],
+  "programs": [
+    {
+      "id": "A-2026-001",
+      "name": "Rice Seed Distribution",
+      "category": "Seeds",
+      "description": "Certified rice seeds for registered farmers preparing for the next planting season.",
+      "eligibility": "Verified farmers with an active rice farm record.",
+      "quantity": "2 bags per qualified farmer",
+      "schedule": "2026-10-10",
+      "location": "Barangay Covered Court",
+      "status": "Open",
+      "createdAt": "2026-09-10T01:00:00.000Z"
+    },
+    {
+      "id": "A-2026-002",
+      "name": "Organic Fertilizer Assistance",
+      "category": "Fertilizer",
+      "description": "Organic fertilizer support for small-scale vegetable and crop farmers.",
+      "eligibility": "Verified farmers with a registered farm within the barangay.",
+      "quantity": "5 sacks per qualified farmer",
+      "schedule": "2026-10-18",
+      "location": "Barangay Agricultural Office",
+      "status": "Open",
+      "createdAt": "2026-09-11T01:00:00.000Z"
+    }
+  ],
+  "assistance": [
+    {
+      "id": "AS-2026-0001",
+      "farmerId": "F-2026-0001",
+      "programId": "A-2026-001",
+      "quantity": "2 bags",
+      "dateReceived": "2026-09-12",
+      "status": "Distributed",
+      "remarks": "Received by farmer",
+      "recordedBy": "U-ADMIN-001",
+      "createdAt": "2026-09-12T02:00:00.000Z"
+    }
+  ],
+  "announcements": [
+    {
+      "id": "N-2026-001",
+      "title": "Farmer Verification Schedule",
+      "message": "Bring a valid ID and farm information to the Barangay Agricultural Office for verification.",
+      "audience": "All Farmers",
+      "priority": "Normal",
+      "published": true,
+      "createdAt": "2026-09-12T03:00:00.000Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "LOG-1790706414191-6c5da8",
+      "actor": "U-ADMIN-001",
+      "action": "LOGIN",
+      "target": "AUTH",
+      "details": "User logged in",
+      "createdAt": "2026-09-29T18:26:54.191Z"
+    },
+    {
+      "id": "LOG-1790706405327-e9b6c1",
+      "actor": "U-ADMIN-001",
+      "action": "LOGIN",
+      "target": "AUTH",
+      "details": "User logged in",
+      "createdAt": "2026-09-29T18:26:45.327Z"
+    },
+    {
+      "id": "LOG-1790706397487-5613a9",
+      "actor": "U-ADMIN-001",
+      "action": "LOGIN",
+      "target": "AUTH",
+      "details": "User logged in",
+      "createdAt": "2026-09-29T18:26:37.487Z"
+    }
+  ]
+}

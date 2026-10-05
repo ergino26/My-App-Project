@@ -1,0 +1,13 @@
+{
+  "name": "barangay-farmer-registration-assistance-system",
+  "version": "2.1.0",
+  "description": "Offline Barangay-Based Farmer Registration and Assistance System built with Node.js only and SQLite.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "db:reset": "node reset-db.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
